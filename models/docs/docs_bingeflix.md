@@ -47,3 +47,28 @@ The state or region the user resides in
 {% docs bingeflix_country %}
 The country the user resides in
 {% enddocs %}
+
+{% docs bingeflix_current_age %}
+The user's current age.
+{% enddocs %}
+
+{% docs bingeflix_age_at_acquisition %}
+The age of the user when they became a Bingeflix user.
+{% enddocs %}
+
+## Events
+{% docs bingeflix_session_id %}
+The unique identifier of the session in the Bingeflix application
+{% enddocs %}
+
+{% docs bingeflix_created_at %}
+When the event was logged
+{% enddocs %}
+
+{% docs bingeflix_event_name %}
+The name of the event
+{% enddocs %}
+
+{% docs bingeflix_event_id %}
+The unique identifier of the event
+{% enddocs %}
