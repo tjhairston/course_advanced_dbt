@@ -61,7 +61,7 @@ The age of the user when they became a Bingeflix user.
 The unique identifier of the session in the Bingeflix application
 {% enddocs %}
 
-{% docs bingeflix_created_at %}
+{% docs bingeflix_event_created_at %}
 When the event was logged
 {% enddocs %}
 
