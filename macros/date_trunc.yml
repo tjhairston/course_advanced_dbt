@@ -1,0 +1,6 @@
+macros:
+  - name: date_trunc
+    description: macro used to remove unwanted detail of a timestamp column for redundant date manipulation
+    arguments:
+      - name: date_part
+        description: use 'day', 'month', 'year', 'quarter'
