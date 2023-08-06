@@ -1,0 +1,14 @@
+macros:
+  - name: rolling_average_n_periods
+    description: macro used to caculate a window funtction over N period of time.
+    arguments:
+      - name: agg_func
+        description: SUM, AVG, ROW_NUMBER, RANK, COUNT
+      - name: column_name
+        description: column that you want to perform agg_func on
+      - name: partition_by
+        description: column you would like to partition window on
+      - name: order_by
+        description: column you would like to order window funtion by
+      - name: 'n'
+        description: look back floor (use int eg. 7 )
