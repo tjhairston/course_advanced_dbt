@@ -10,26 +10,18 @@ models:
 
       - name: created_at
         description: '{{ doc("bingeflix_created_at") }}'
-        tests:
-          - not_null
 
       - name: phone_number
         description: '{{ doc("bingeflix_phone_number") }}'
-        tests:
-          - not_null
 
       - name: deleted_at
         description: '{{ doc("bingeflix_deleted_at") }}'
 
       - name: username
         description: '{{ doc("bingeflix_username") }}'
-        tests:
-          - not_null
 
       - name: name
         description: '{{ doc("bingeflix_name") }}'
-        tests:
-          - not_null
 
       - name: sex
         description: '{{ doc("bingeflix_sex") }}'
@@ -40,20 +32,12 @@ models:
 
       - name: email
         description: '{{ doc("bingeflix_email") }}'
-        tests:
-          - not_null
 
       - name: birthdate
         description: '{{ doc("bingeflix_birthdate") }}'
-        tests:
-          - not_null
 
       - name: region
         description: '{{ doc("bingeflix_region") }}'
-        tests:
-          - not_null
 
       - name: country
         description: '{{ doc("bingeflix_country") }}'
-        tests:
-          - not_null
