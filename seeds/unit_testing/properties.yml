@@ -1,0 +1,44 @@
+version: 2
+
+seeds:
+  - name: unit_test_input_dim_dates
+    config:
+      tags: unit_testing
+      column_types:
+        date_week: date
+        date_month: date
+        date_quarter: date
+        date_year: date
+        day_of_month: number
+        year_num: number
+        quarter_num: number
+        month_num: number
+  - name: unit_test_input_dim_subscriptions
+    config:
+      tags: unit_testing
+      column_types:
+        subscription_id: number
+        subscription_plan_id: number
+        user_id: number
+        starts_at: timestamp_ntz
+        ends_at: timestamp_ntz
+        plan_name: varchar
+        pricing: number
+        billing_period: varchar
+  - name: unit_test_expected_output_mrr
+    config:
+      tags: unit_testing
+      column_types:
+        surrogate_key: varchar
+        date_month: date
+        user_id: number
+        subscription_id: number
+        starts_at: timestamp_ntz
+        ends_at: timestamp_ntz
+        plan_name: varchar
+        mrr_amount: float
+        mrr_change: float
+        retained_mrr_amount: float
+        previous_month_mrr_amount: float
+        change_category: varchar
+        month_retained_number: number
